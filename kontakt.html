@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt Bermingrud Eiendomsservice for gratis befaring og tilbud på tak og eiendomsservice i Øvre Eiker, Drammen og omegn. Ring 900 00 000.">
+    <meta name="keywords" content="kontakt taktekker vestfossen, tilbud tak øvre eiker, gratis befaring tak drammen, takreparasjon pris">
+    <meta name="author" content="Bermingrud Eiendomsservice AS">
+
+    <title>Kontakt oss - Gratis Befaring | Bermingrud Eiendomsservice</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__main">Bermingrud</span>
+                <span class="logo__sub">Eiendomsservice</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Hjem</a></li>
+                    <li><a href="tjenester.html" class="nav__link">Tjenester</a></li>
+                    <li><a href="om-oss.html" class="nav__link">Om oss</a></li>
+                    <li><a href="omrade.html" class="nav__link">Område</a></li>
+                    <li><a href="kontakt.html" class="nav__link active">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="tel:+4790000000" class="header__phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    900 00 000
+                </a>
+                <a href="kontakt.html" class="btn btn--primary btn--sm header__cta">Gratis befaring</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Åpne meny" aria-expanded="false">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Hjem</a></li>
+            <li class="mobile-menu__item"><a href="tjenester.html" class="mobile-menu__link">Tjenester</a></li>
+            <li class="mobile-menu__item"><a href="om-oss.html" class="mobile-menu__link">Om oss</a></li>
+            <li class="mobile-menu__item"><a href="omrade.html" class="mobile-menu__link">Område</a></li>
+            <li class="mobile-menu__item"><a href="kontakt.html" class="mobile-menu__link active">Kontakt</a></li>
+        </ul>
+        <div class="mobile-menu__cta">
+            <a href="kontakt.html" class="btn btn--secondary">Gratis befaring</a>
+        </div>
+        <div class="mobile-menu__phone">
+            <a href="tel:+4790000000">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                900 00 000
+            </a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <span class="page-hero__badge fade-in">Kontakt oss</span>
+                <h1 class="page-hero__title fade-in">Vi tar gjerne en prat om taket ditt</h1>
+                <p class="page-hero__subtitle fade-in">
+                    Send oss en forespørsel eller ring direkte. Vi tilbyr gratis befaring
+                    og uforpliktende tilbud i hele Eiker-regionen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form fade-in">
+                    <h2 class="contact-form__title">Send oss en forespørsel</h2>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Navn <span>*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Ditt fulle navn" required>
+                                <p class="form-error"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Telefon <span>*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Ditt telefonnummer" required>
+                                <p class="form-error"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">E-post <span>*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="din@epost.no" required>
+                                <p class="form-error"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="address">Adresse/sted</label>
+                                <input type="text" id="address" name="address" class="form-input" placeholder="Hvor skal arbeidet utføres?">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="project-type">Type prosjekt <span>*</span></label>
+                            <select id="project-type" name="project-type" class="form-select" required>
+                                <option value="">Velg type prosjekt</option>
+                                <option value="nytt-tak">Nytt tak / Omtekking</option>
+                                <option value="takreparasjon">Takreparasjon</option>
+                                <option value="blikkenslager">Blikkenslagerarbeid</option>
+                                <option value="takvedlikehold">Takvedlikehold / Inspeksjon</option>
+                                <option value="eiendomsservice">Eiendomsservice</option>
+                                <option value="landbruk">Landbruk / Driftsbygning</option>
+                                <option value="annet">Annet</option>
+                            </select>
+                            <p class="form-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Beskrivelse av prosjektet <span>*</span></label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Fortell oss om prosjektet ditt – hva trenger du hjelp med?" required></textarea>
+                            <p class="form-error"></p>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn--primary btn--lg">Send forespørsel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info fade-in">
+                    <!-- Phone Card -->
+                    <div class="contact-card contact-card--highlight">
+                        <div class="contact-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+                        <h3 class="contact-card__title">Ring oss direkte</h3>
+                        <p class="contact-card__value">
+                            <a href="tel:+4790000000">900 00 000</a>
+                        </p>
+                        <p class="contact-card__note">Hverdager 07:00–16:00</p>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <h3 class="contact-details__title">Kontaktinformasjon</h3>
+                        <ul class="contact-details__list">
+                            <li class="contact-details__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <div>
+                                    <span class="contact-details__label">E-post</span>
+                                    <span class="contact-details__value">
+                                        <a href="mailto:post@bermingrud-eiendom.no">post@bermingrud-eiendom.no</a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="contact-details__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <div>
+                                    <span class="contact-details__label">Adresse</span>
+                                    <span class="contact-details__value">Ødegårdgata 7, 3320 Vestfossen</span>
+                                </div>
+                            </li>
+                            <li class="contact-details__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+                                <div>
+                                    <span class="contact-details__label">Org.nr</span>
+                                    <span class="contact-details__value">936 863 213</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Response time -->
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                        </div>
+                        <h3 class="contact-card__title">Raskt svar</h3>
+                        <p class="contact-card__note">Vi svarer deg raskt – vanligvis samme dag.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact-map mt-5 fade-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8044.15!2d9.8789!3d59.7736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641464da9d8f9c3%3A0x0!2s%C3%98deg%C3%A5rdgata%207%2C%203320%20Vestfossen!5e0!3m2!1sno!2sno!4v1703936400000!5m2!1sno!2sno"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Bermingrud Eiendomsservice - Ødegårdgata 7, Vestfossen">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Quote Banner -->
+    <section class="section section--stone">
+        <div class="container">
+            <div class="section-header section-header--center fade-in">
+                <span class="section-header__badge">Gratis befaring</span>
+                <h2 class="section-header__title">Vi kommer gjerne til deg</h2>
+                <p class="section-header__subtitle">
+                    Gratis befaring og uforpliktende tilbud i hele vårt dekningsområde.
+                    Vi tar oss tid til å se på prosjektet og gir deg en ærlig vurdering.
+                </p>
+            </div>
+
+            <div class="area-grid">
+                <div class="area-card fade-in stagger-1">
+                    <div class="area-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <div class="area-card__content">
+                        <span class="area-card__name">Øvre Eiker</span>
+                        <span class="area-card__places">Hokksund, Vestfossen, Skotselv</span>
+                    </div>
+                </div>
+
+                <div class="area-card fade-in stagger-2">
+                    <div class="area-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <div class="area-card__content">
+                        <span class="area-card__name">Drammen</span>
+                        <span class="area-card__places">Mjøndalen, Gulskogen, Konnerud</span>
+                    </div>
+                </div>
+
+                <div class="area-card fade-in stagger-3">
+                    <div class="area-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <div class="area-card__content">
+                        <span class="area-card__name">Kongsberg</span>
+                        <span class="area-card__places">Kongsberg og omegn</span>
+                    </div>
+                </div>
+
+                <div class="area-card fade-in stagger-4">
+                    <div class="area-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <div class="area-card__content">
+                        <span class="area-card__name">Modum</span>
+                        <span class="area-card__places">Vikersund, Geithus</span>
+                    </div>
+                </div>
+
+                <div class="area-card fade-in stagger-5">
+                    <div class="area-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <div class="area-card__content">
+                        <span class="area-card__name">Lier</span>
+                        <span class="area-card__places">Lier kommune</span>
+                    </div>
+                </div>
+
+                <div class="area-card fade-in stagger-6">
+                    <div class="area-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <div class="area-card__content">
+                        <span class="area-card__name">Nedre Eiker</span>
+                        <span class="area-card__places">Krokstadelva</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="footer__logo-main">Bermingrud</span>
+                        <span class="footer__logo-sub">Eiendomsservice</span>
+                    </div>
+                    <p class="footer__tagline">Din lokale takpartner i Eiker</p>
+                    <p>Trygt tak over hodet – lokalt forankret, solid utført.</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Tjenester</h4>
+                    <ul class="footer__nav">
+                        <li><a href="tjenester.html">Taktekking</a></li>
+                        <li><a href="tjenester.html">Takreparasjon</a></li>
+                        <li><a href="tjenester.html">Blikkenslagerarbeid</a></li>
+                        <li><a href="tjenester.html">Eiendomsservice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Kontakt</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:+4790000000">900 00 000</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:post@bermingrud-eiendom.no">post@bermingrud-eiendom.no</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            <span>Ødegårdgata 7, 3320 Vestfossen</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Områder</h4>
+                    <div class="footer__areas">
+                        <span class="footer__area-tag">Øvre Eiker</span>
+                        <span class="footer__area-tag">Drammen</span>
+                        <span class="footer__area-tag">Kongsberg</span>
+                        <span class="footer__area-tag">Modum</span>
+                        <span class="footer__area-tag">Lier</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 Bermingrud Eiendomsservice AS. Alle rettigheter reservert.</p>
+                <p class="footer__org">Org.nr: 936 863 213</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
